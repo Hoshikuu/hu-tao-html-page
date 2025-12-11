@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="media/icon.ico">
+
+    <link rel="stylesheet" href="css/extra/styles.css">
+    <link rel="stylesheet" href="css/extra/cover.css">
+    <link rel="stylesheet" href="css/extra/responsive.css">
+    <link rel="stylesheet" href="css/team.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Story+Script&display=swap" rel="stylesheet">
+
     <title>Team</title>
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <nav>
             <ul>
-                <li class="logo"><img src="https://placehold.co/48x48" alt=""></li>
+                <li class="logo"><a href="home.html"><img src="media/nav.icon.jpg" alt=""></a></li>
                 <span></span>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="lore.html">Lore</a></li>
@@ -21,8 +32,43 @@
         </nav>
     </header>
 
+    <main>
+        <section class="main-section">
+            <img src="media/team-background.jpg" alt="">
+            <h1>Team</h1>
+            <h2>Composición de equipos para Hu Tao</h2>
+        </section>
+
+        <section class="synergies-section">
+
+        </section>
+
+        <section class="teams-section">
+
+        </section>
+
+
+    </main>
+
     <footer>
-        <p>© 2025 Hu Tao Fan Page</p>
+        <p>© 2025 Hu Tao Fan Page | Creado por Hoshiku</p>
     </footer>
+
+    <script>
+        const header = document.getElementById('main-header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
 </body>
 </html>
