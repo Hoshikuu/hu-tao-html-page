@@ -1,0 +1,22 @@
+:root {
+    --title-text: #fef6e7;
+    --subtitle-text: #ffe1a3;
+    --title-shadow: #971a1ae6;
+    --subtitle-shadow: #ff8c0066;
+}
+
+.constellation-section {
+    color: #fef6e7;
+}
+
+.constellation-item {
+    display: flex;
+}
+
+.talent-section {
+    color: #fef6e7;
+}
+
+.talent-item {
+    display: flex;
+}
