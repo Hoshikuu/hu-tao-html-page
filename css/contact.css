@@ -1,6 +1,11 @@
+/* contact.css
+   Base stylesheet for the Hu Tao guide.
+   Notes: transitions removed except image zoom on hover.
+*/
+
 /* Contenedor principal centrado */
 .contact-container {
-    max-width: 600px;
+max-width: 600px;
     margin: 120px auto 50px;
     padding: 40px;
     background: linear-gradient(135deg, rgba(59, 31, 31, 0.7), rgba(42, 21, 21, 0.8));
@@ -11,7 +16,7 @@
 }
 
 .contact-container h1 {
-    font-size: 2.5rem;
+font-size: 2.5rem;
     color: var(--accent);
     text-align: center;
     margin-bottom: 30px;
@@ -22,19 +27,19 @@
 
 /* Formulario */
 .contact-form {
-    display: flex;
+display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .form-group {
-    display: flex;
+display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 .form-group label {
-    color: var(--accent);
+color: var(--accent);
     font-weight: 600;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -44,20 +49,19 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-    background: rgba(26, 15, 15, 0.6);
+background: rgba(26, 15, 15, 0.6);
     border: 2px solid var(--nav-li-border);
     border-radius: 12px;
     padding: 12px 16px;
     color: var(--text);
     font-size: 1rem;
     font-family: 'Trebuchet MS', sans-serif;
-    transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: none;
+outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 15px rgba(255, 179, 71, 0.2);
     background: rgba(26, 15, 15, 0.8);
@@ -65,60 +69,60 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(254, 246, 231, 0.4);
+color: rgba(254, 246, 231, 0.4);
 }
 
 .form-group textarea {
-    resize: vertical;
+resize: vertical;
     min-height: 120px;
 }
 
 .form-group select {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .form-group select option {
-    background: var(--bg);
+background: var(--bg);
     color: var(--text);
 }
 
 /* Checkbox */
 .checkbox-group {
-    margin-top: 5px;
+margin-top: 5px;
 }
 
 .checkbox-label {
-    display: flex;
+display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
 }
 
 .checkbox-label input[type="checkbox"] {
-    width: 18px;
+width: 18px;
     height: 18px;
     cursor: pointer;
     accent-color: var(--accent);
 }
 
 .checkbox-label span {
-    color: var(--text);
+color: var(--text);
     font-size: 0.9rem;
 }
 
 .checkbox-label a {
-    color: var(--accent);
+color: var(--accent);
     text-decoration: none;
     font-weight: 600;
 }
 
 .checkbox-label a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Botón */
 .submit-btn {
-    background: linear-gradient(135deg, var(--nav-li-bg-hover), var(--nav-li-active-bg));
+background: linear-gradient(135deg, var(--nav-li-bg-hover), var(--nav-li-active-bg));
     border: 2px solid var(--accent);
     border-radius: 50px;
     padding: 14px 30px;
@@ -128,56 +132,55 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease;
     margin-top: 10px;
 }
 
 .submit-btn:hover {
-    background: linear-gradient(135deg, var(--nav-li-active-bg), #b01515);
-    transform: translateY(-2px);
+background: linear-gradient(135deg, var(--nav-li-active-bg), #b01515);
     box-shadow: 0 5px 20px rgba(255, 179, 71, 0.3);
 }
 
 .submit-btn:active {
-    transform: translateY(0);
+transform: translateY(0);
 }
 
 /* Validación HTML5 nativa */
 .form-group input:invalid,
 .form-group select:invalid,
 .form-group textarea:invalid {
-    border-color: var(--nav-li-border);
+border-color: var(--nav-li-border);
 }
 
 .form-group input:valid,
 .form-group select:valid,
 .form-group textarea:valid {
-    border-color: var(--nav-li-border);
+border-color: var(--nav-li-border);
 }
 
 /* Responsive */
+/* Responsive rules */
 @media (max-width: 768px) {
     .contact-container {
-        margin: 100px 20px 30px;
+margin: 100px 20px 30px;
         padding: 30px 20px;
-    }
+}
 
     .contact-container h1 {
-        font-size: 2rem;
-    }
+font-size: 2rem;
+}
 }
 
 @media (max-width: 480px) {
     .contact-container {
-        margin: 90px 15px 25px;
+margin: 90px 15px 25px;
         padding: 25px 15px;
-    }
+}
 
     .contact-container h1 {
-        font-size: 1.8rem;
-    }
+font-size: 1.8rem;
+}
 
     .submit-btn {
-        width: 100%;
-    }
+width: 100%;
+}
 }
