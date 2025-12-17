@@ -48,25 +48,21 @@
             <h1>Si entiendes y respetas a la muerte, comprenderás el valor de la vida.</h1>
         </section>
 
-        <section class="img-section" aria-label="Galería de imágenes de Hu Tao">
+        <section class="gallery-section" aria-label="Galería de imágenes de Hu Tao">
             <div class="gallery-row">
                 <div class="gallery-item">
                     <img src="media/gif/home-gif-1.gif" alt="Hu Tao - Gif 1">
-                    <div class="overlay"></div>
                 </div>
                 <div class="gallery-item">
                     <img src="media/img/home-img-1.jpg" alt="Hu Tao - Imagen 2">
-                    <div class="overlay"></div>
                 </div>
             </div>
             <div class="gallery-row">
                 <div class="gallery-item">
                     <img src="media/img/home-img-2.jpg" alt="Hu Tao - Imagen 3">
-                    <div class="overlay"></div>
                 </div>
                 <div class="gallery-item">
                     <img src="media/gif/home-gif-2.gif" alt="Hu Tao - Gif 4">
-                    <div class="overlay"></div>
                 </div>
             </div>
         </section>
@@ -76,22 +72,6 @@
         <p>© 2025 Hoshiku | <a href="cookies.html">Cookies</a> | <a href="privacy.html">Política de privacidad</a></p>
     </footer>
 
-    <script>
-        const header = document.getElementById('main-header');
-        let lastScroll = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
-  <script src="header-scroll.js" defer></script>
+    <script src="header-scroll.js" defer></script>
 </body>
 </html>

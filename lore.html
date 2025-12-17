@@ -40,21 +40,18 @@
             <h2>Historia de Hu Tao</h2>
         </section>
 
-        <section class="img-section" aria-label="Galería de imágenes de Hu Tao">
+        <section class="gallery-section" aria-label="Galería de imágenes de Hu Tao">
             <div class="gallery-row">
                 <div class="gallery-item">
                     <img src="media/img/lore-img-1.jpg" alt="Hu Tao - Imagen 1">
-                    <div class="overlay"></div>
                 </div>
                 <div class="gallery-item">
                     <img src="media/img/lore-img-2.jpg" alt="Hu Tao - Imagen 2">
-                    <div class="overlay"></div>
                 </div>
             </div>
             <div class="gallery-row">
                 <div class="gallery-item">
                     <img src="media/img/lore-img-3.jpg" alt="Hu Tao - Imagen 3">
-                    <div class="overlay"></div>
                 </div>
                 <div class="gallery-item-2">
                     <h1>Orígenes y infancia</h1>
@@ -68,13 +65,11 @@
                 </div>
                 <div class="gallery-item">
                     <img src="media/img/lore-img-4.jpg" alt="Hu Tao - Imagen 4">
-                    <div class="overlay"></div>
                 </div>
             </div>
             <div class="gallery-row">
                 <div class="gallery-item">
                     <img src="media/img/lore-img-5.jpg" alt="Hu Tao - Imagen 5">
-                    <div class="overlay"></div>
                 </div>
                 <div class="gallery-item-2">
                     <h1>Filosofía y esencia</h1>
@@ -84,7 +79,6 @@
             <div class="gallery-row">
                 <div class="gallery-item-last-img">
                     <img src="media/img/lore-img-6.jpg" alt="Hu Tao - Imagen 6">
-                    <div class="overlay"></div>
                 </div>
             </div>
         </section>
@@ -94,22 +88,6 @@
         <p>© 2025 Hoshiku | <a href="cookies.html">Cookies</a> | <a href="privacy.html">Política de privacidad</a></p>
     </footer>
 
-    <script>
-        const header = document.getElementById('main-header');
-        let lastScroll = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
-  <script src="header-scroll.js" defer></script>
+    <script src="header-scroll.js" defer></script>
 </body>
 </html>

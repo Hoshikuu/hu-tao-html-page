@@ -2,17 +2,21 @@
     CSS - Incluye estilos especificos para build.html
 */
 
-/*Seccion entera de talentos*/
+/*Estilos para los 4 secciones*/
 .talent-section,
-.constellation-section {
+.constellation-section,
+.artifact-section,
+.weapon-section {
     max-width: 1400px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
-/*El titulo de la seccion de talentos*/
+/*Estilo para el titulo de las secciones*/
 .talent-section > h1,
-.constellation-section > h1 {
+.constellation-section > h1,
+.artifact-section > h1,
+.weapon-section > h1 {
     font-family: "Luckiest Guy", cursive;
     font-size: 60px;
     text-align: center;
@@ -26,9 +30,11 @@
     position: relative;
 }
 
-/*La barra decorativa de abajo con degradado*/
+/*Linea decorativa en las secciones*/
 .talent-section > h1:after,
-.constellation-section > h1:after {
+.constellation-section > h1:after,
+.artifact-section > h1:after,
+.weapon-section > h1::after {
     content: "";
     display: block;
     width: 200px;
@@ -39,29 +45,41 @@
 }
 
 
-/*Usar flex para el grid de los talentos*/
+/*Flex para los grids de talent y constellation*/
 .talent-grid,
 .constellation-grid {
     display: flex;
-    flex-direction: column; /*Usarlo de manera de columna*/
+    flex-direction: column;
     gap: 20px;
 }
 
-/*Estilo de las tarjetas individuales*/
-.talent-item,
-.constellation-item {
+/*Grid para los de artifact y weapon*/
+.artifact-grid,
+.weapon-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/*Tarjetas individuales*/
+.talent-item,
+.constellation-item,
+.artifact-item,
+.weapon-item {
+    display: flex;
+    flex-direction: column;
     gap: 25px;
-    background: rgba(59, 31, 31, 0.6); /*COLOR*/
+    background: rgba(59, 31, 31, 0.6); /*--COLOR*/
     border-radius: 20px;
     border: 2px solid var(--card-border);
     padding: 20px;
     position: relative;
 }
 
-/*La imagen de la tarjeta*/
+/*Estilo de la imagen de la tarjeta*/
 .talent-item > img,
-.constellation-item > img {
+.constellation-item > img,
+.artifact-item > img{
     width: 128px;
     height: 128px;
     object-fit: cover;
@@ -71,24 +89,63 @@
     transition: ease 0.2s;
 }
 
+/*Extra del estilo*/
+.artifact-item > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Estilo de la imagen a la derecha*/
+.weapon-item > img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    transition: ease 0.2s;
+}
+
 /*El titulo de cada tarjeta*/
 .talent-item > h2,
-.constellation-item > h2 {
+.constellation-item > h2,
+.artifact-item > h2,
+.weapon-item > h2 {
     font-family: "Luckiest Guy", cursive;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--subtitle-text);
     text-shadow:
-        0 0 6px rgba(0, 0, 0, 0.9), /*COLOR*/
-        0 0 14px rgba(151, 26, 26, 0.7); /*COLOR*/
+        0 0 6px rgba(0, 0, 0, 0.9), /*--COLOR*/
+        0 0 14px rgba(151, 26, 26, 0.7); /*--COLOR*/
 }
 
+/*Estilo extra añadido*/
+.weapon-item > h2 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-right: 25%;
+    line-height: 1.3;
+    position: absolute;
+}
+
+/*Estilo para el texto*/
+/*LO SIGUIENTE ES TODO PARA EL TEXTO*/
 .talent-item > ul,
-.constellation-item > ul {
+.constellation-item > ul,
+.artifact-item > ul,
+.weapon-item > ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+.weapon-item > ul {
+    padding-top: 80px;
 }
 
 .talent-item > ul > li,
@@ -96,6 +153,11 @@
     margin-bottom: 8px;
     position: relative;
     padding-left: 20px;
+}
+
+.artifact-item > ul > li,
+.weapon-item > ul > li {
+    margin-bottom: 8px;
 }
 
 .talent-item > ul > li:before,
@@ -116,7 +178,9 @@
 }
 
 .talent-item > ul > li > p,
-.constellation-item > ul > li > p {
+.constellation-item > ul > li > p,
+.artifact-item > ul > li > p,
+.weapon-item > ul > li > p {
     font-size: 15px;
     line-height: 2;
     color: var(--text);
@@ -152,414 +216,25 @@
     color: var(--text);
 }
 
+/*Cambios de estilo cuando esta el cursor encima*/
 .talent-item:hover,
-.constellation-item:hover {
+.constellation-item:hover,
+.artifact-item:hover,
+.weapon-item:hover {
     border-color: var(--accent);
     box-shadow:
-        -5px 5px 25px rgba(255, 140, 50, 0.4), /*COLOR*/
-        0 0 40px rgba(255, 179, 71, 0.2); /*COLOR*/
+        -5px 5px 25px rgba(255, 140, 50, 0.4), /*--COLOR*/
+        0 0 40px rgba(255, 179, 71, 0.2); /*--COLOR*/
 }
 
+/*Animacion de zoom cuando esta el cursor encima*/
 .talent-item:hover > img,
-.constellation-item:hover > img {
+.constellation-item:hover > img,
+.artifact-item:hover > img,
+.weapon-item:hover > img {
     transform: scale(1.1);
     box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.8), /*COLOR*/
+        0 0 30px rgba(255, 179, 71, 0.8), /*--COLOR*/
         0 0 20px black;
     transition: ease 0.2s;
-}
-
-/* ========================================
-   ⚔️ WEAPON SECTION - Diseño Badge/Sello
-   ======================================== */
-
-.weapon-section {
-max-width: 1400px;
-    margin: 80px auto 60px;
-    padding: 0 20px;
-}
-
-.weapon-section > h1 {
-font-family: "Luckiest Guy", cursive;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--title-text);
-    text-shadow:
-        0 0 10px black,
-        0 0 25px var(--title-shadow),
-        0 0 40px var(--title-shadow);
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.weapon-section > h1::after {
-content: "";
-    display: block;
-    width: 200px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    margin: 15px auto 0;
-    border-radius: 2px;
-    box-shadow: 0 0 10px var(--accent);
-}
-
-.weapon-grid {
-display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-}
-
-.weapon-item {
-background: linear-gradient(135deg, rgba(59, 31, 31, 0.4) 0%, rgba(11, 3, 5, 0.8) 100%);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    border: 2px solid var(--card-border);
-    padding: 25px;
-    position: relative;
-    overflow: hidden;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-}
-
-.weapon-item::before {
-content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -50px;
-    right: -50px;
-    background: radial-gradient(circle, rgba(255, 140, 50, 0.18), transparent 70%);
-    filter: blur(30px);
-    pointer-events: none;
-}
-
-.weapon-item > img {
-position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    border-radius: 50%;
-    border: 2px solid var(--accent);
-    padding: 8px;
-    background: radial-gradient(circle, rgba(26, 15, 15, 0.95), rgba(59, 31, 31, 0.8));
-    box-shadow: 
-        0 0 15px rgba(255, 179, 71, 0.5),
-        inset 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 2;
-  transition: transform 0.25s ease;
-  will-change: transform;
-}
-
-.weapon-item > h2 {
-font-family: "Luckiest Guy", cursive;
-    font-size: clamp(1.15rem, 2vw, 1.45rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--subtitle-text);
-    text-shadow:
-        0 0 6px rgba(0, 0, 0, 0.9),
-        0 0 14px rgba(151, 26, 26, 0.7);
-    margin: 0 0 15px 0;
-    padding-right: 85px;
-    line-height: 1.3;
-    position: relative;
-    z-index: 1;
-}
-
-.weapon-item > ul {
-list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-grow: 1;
-    position: relative;
-    z-index: 1;
-}
-
-.weapon-item > ul > li {
-margin-bottom: 8px;
-}
-
-.weapon-item > ul > li > p {
-font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.weapon-item:hover {
-border-color: var(--accent);
-    box-shadow: 
-        0 8px 25px rgba(255, 140, 50, 0.45),
-        0 0 35px rgba(255, 179, 71, 0.3);
-}
-
-.weapon-item:hover > img {
-transform: scale(1.05);
-    box-shadow: 
-        0 0 25px rgba(255, 179, 71, 0.8),
-        inset 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.25s ease;
-  will-change: transform;
-}
-
-
-/* ========================================
-   🎭 ARTIFACT SECTION - Diseño Medallón
-   ======================================== */
-
-.artifact-section {
-max-width: 1400px;
-    margin: 80px auto 60px;
-    padding: 0 20px;
-}
-
-.artifact-section > h1 {
-font-family: "Luckiest Guy", cursive;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--title-text);
-    text-shadow:
-        0 0 10px black,
-        0 0 25px var(--title-shadow),
-        0 0 40px var(--title-shadow);
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.artifact-section > h1::after {
-content: "";
-    display: block;
-    width: 200px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    margin: 15px auto 0;
-    border-radius: 2px;
-    box-shadow: 0 0 10px var(--accent);
-}
-
-.artifact-grid {
-display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.artifact-item {
-background: linear-gradient(135deg, rgba(74, 26, 26, 0.4) 0%, rgba(11, 3, 5, 0.7) 100%);
-    backdrop-filter: blur(8px);
-    border-radius: 22px;
-    border: 2px solid var(--card-border);
-    padding: 35px 25px 25px;
-    position: relative;
-    overflow: hidden;
-    min-height: 260px;
-    text-align: center;
-}
-
-.artifact-item::before {
-content: "";
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255, 140, 50, 0.15), transparent 70%);
-    filter: blur(40px);
-    pointer-events: none;
-}
-
-.artifact-item > img {
-width: 90px;
-    height: 90px;
-    object-fit: contain;
-    border-radius: 50%;
-    border: 3px solid var(--accent);
-    padding: 10px;
-    background: radial-gradient(circle, rgba(26, 15, 15, 0.95), rgba(74, 26, 26, 0.7));
-    box-shadow: 
-        0 0 20px rgba(255, 179, 71, 0.6),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
-    margin: 0 auto 20px;
-    display: block;
-    position: relative;
-    z-index: 2;
-  transition: transform 0.25s ease;
-  will-change: transform;
-}
-
-.artifact-item > h2 {
-font-family: "Luckiest Guy", cursive;
-    font-size: clamp(1.15rem, 2vw, 1.45rem);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--subtitle-text);
-    text-shadow:
-        0 0 6px rgba(0, 0, 0, 0.9),
-        0 0 14px rgba(151, 26, 26, 0.7);
-    margin: 0 0 18px 0;
-    line-height: 1.3;
-    position: relative;
-    z-index: 1;
-}
-
-.artifact-item > ul {
-list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-}
-
-.artifact-item > ul > li {
-margin-bottom: 8px;
-}
-
-.artifact-item > ul > li > p {
-font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.artifact-item:hover {
-border-color: var(--accent);
-    box-shadow: 
-        0 12px 35px rgba(255, 140, 50, 0.5),
-        0 0 45px rgba(255, 179, 71, 0.35);
-}
-
-.artifact-item:hover > img {
-transform: scale(1.05);
-    box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.9),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.25s ease;
-  will-change: transform;
-}
-
-.artifact-item > ul > li {
-    margin-bottom: 8px;
-}
-
-.artifact-item > ul > li > p {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.artifact-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: var(--accent);
-    box-shadow: 
-        0 12px 35px rgba(255, 140, 50, 0.5),
-        0 0 45px rgba(255, 179, 71, 0.35);
-}
-
-.artifact-item:hover > img {
-    transform: scale(1.15) rotate(-10deg);
-    box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.9),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-
-.artifact-item > ul > li {
-    margin-bottom: 8px;
-}
-
-.artifact-item > ul > li > p {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.artifact-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: var(--accent);
-    box-shadow: 
-        0 12px 35px rgba(255, 140, 50, 0.5),
-        0 0 45px rgba(255, 179, 71, 0.35);
-}
-
-.artifact-item:hover > img {
-    transform: scale(1.15) rotate(-10deg);
-    box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.9),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-
-.artifact-item > ul > li {
-    margin-bottom: 8px;
-}
-
-.artifact-item > ul > li > p {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.artifact-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: var(--accent);
-    box-shadow: 
-        0 12px 35px rgba(255, 140, 50, 0.5),
-        0 0 45px rgba(255, 179, 71, 0.35);
-}
-
-.artifact-item:hover > img {
-    transform: scale(1.15) rotate(-10deg);
-    box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.9),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-
-.artifact-item > ul > li {
-    margin-bottom: 8px;
-}
-
-.artifact-item > ul > li > p {
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: var(--text);
-    text-align: justify;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-    margin: 0;
-}
-
-.artifact-item:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: var(--accent);
-    box-shadow: 
-        0 12px 35px rgba(255, 140, 50, 0.5),
-        0 0 45px rgba(255, 179, 71, 0.35);
-}
-
-.artifact-item:hover > img {
-    transform: scale(1.15) rotate(-10deg);
-    box-shadow: 
-        0 0 30px rgba(255, 179, 71, 0.9),
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
