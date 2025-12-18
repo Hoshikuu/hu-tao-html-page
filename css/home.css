@@ -1,5 +1,5 @@
-/* 
-    CSS Para la pagina Home.html
+/* home.css
+    CSS para home.html
 */
 
 :root {
@@ -74,6 +74,7 @@
     height: 100%;
     max-height: 400px;
     object-fit: cover;
+    transition: ease 0.3s;
 }
 
 /*Borde de otro color al tener el cursor encima*/

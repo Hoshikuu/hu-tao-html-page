@@ -102,22 +102,6 @@
         <p>© 2025 Hoshiku | <a href="cookies.html">Cookies</a> | <a href="privacy.html">Política de privacidad</a></p>
     </footer>
 
-    <script>
-        const header = document.getElementById('main-header');
-        let lastScroll = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
-  <script src="header-scroll.js" defer></script>
+    <script src="header-scroll.js" defer></script>
 </body>
 </html>

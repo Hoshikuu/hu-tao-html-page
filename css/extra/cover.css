@@ -1,26 +1,25 @@
 /* cover.css
-   Base stylesheet for the Hu Tao guide.
-   Notes: transitions removed except image zoom on hover.
+    CSS para el cover de la pagina tipo hero
 */
 
 /* Theme variables */
 :root {
---title-text: #fef6e7;
+    --title-text: #fef6e7;
     --subtitle-text: #ffe1a3;
     --title-shadow: #971a1ae6;
     --subtitle-shadow: ff8c0066;
 }
 
 .main-section {
-position: relative;
+    position: relative;
     width: 100%;
     height: 100vh;
     min-height: 600px;
     overflow: hidden;
 }
 
-.main-section > img {
-display: block;
+.main-section>img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,8 +27,8 @@ display: block;
 
 }
 
-.main-section > h1 {
-font-family: "Luckiest Guy", cursive;
+.main-section>h1 {
+    font-family: "Luckiest Guy", cursive;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -47,8 +46,8 @@ font-family: "Luckiest Guy", cursive;
         0 0 40px var(--title-shadow);
 }
 
-.main-section > h2 {
-font-family: "Story Script", cursive;
+.main-section>h2 {
+    font-family: "Story Script", cursive;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -59,7 +58,7 @@ font-family: "Story Script", cursive;
     font-size: clamp(1.3rem, 4vw, 2.8rem);
     font-weight: 400;
     color: var(--subtitle-text);
-    text-shadow: 
+    text-shadow:
         0 0 8px black,
         0 0 20px var(--subtitle-shadow);
 }

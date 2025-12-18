@@ -43,15 +43,15 @@
         <section class="stats-section">
             <div class="min-stats">
                 <img src="media/stats-img/banner1.png" alt="">
-                <table>
-                    <thead>
+                <table class="min-table">
+                    <thead class="min-head">
                         <tr>
                             <th>Estadísticas</th>
                             <th>Base</th>
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody class="min-body">
                         <tr>
                             <td>Vida</td>
                             <td>15080</td>
@@ -92,15 +92,15 @@
 
             <div class="opt-stats">
                 <img src="media/stats-img/banner2.png" alt="">
-                <table>
-                    <thead>
+                <table class="opt-table">
+                    <thead class="opt-head">
                         <tr>
                             <th>Estadísticas</th>
                             <th>Recomendado</th>
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody class="opt-body">
                         <tr>
                             <td>Vida</td>
                             <td>>30000</td>
@@ -140,8 +140,8 @@
             </div>
 
             <div class="art-stats">
-                <table>
-                    <thead>
+                <table class="art-table">
+                    <thead class="art-head">
                         <tr>
                             <th><img src="media/stats-icon/flower.webp" alt=""></th>
                             <th><img src="media/stats-icon/feather.webp" alt=""></th>
@@ -151,7 +151,7 @@
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody class="art-body">
                         <tr class="main-stats">
                             <td>Vida</td>
                             <td>Ataque</td>
@@ -173,22 +173,6 @@
         <p>© 2025 Hoshiku | <a href="cookies.html">Cookies</a> | <a href="privacy.html">Política de privacidad</a></p>
     </footer>
 
-    <script>
-        const header = document.getElementById('main-header');
-        let lastScroll = 0;
-
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
-  <script src="header-scroll.js" defer></script>
+    <script src="header-scroll.js" defer></script>
 </body>
 </html>

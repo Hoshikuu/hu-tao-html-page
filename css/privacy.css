@@ -1,11 +1,11 @@
 /* privacy.css
-   Base stylesheet for the Hu Tao guide.
-   Notes: transitions removed except image zoom on hover.
+    CSS para privacy.html
+    Generado con IA
 */
 
 /* Estilos para política de privacidad */
 .privacy-container {
-max-width: 900px;
+    max-width: 900px;
     margin: 120px auto 50px;
     padding: 40px;
     background: linear-gradient(135deg, rgba(59, 31, 31, 0.7), rgba(42, 21, 21, 0.8));
@@ -16,7 +16,7 @@ max-width: 900px;
 }
 
 .privacy-container h1 {
-font-size: 2.8rem;
+    font-size: 2.8rem;
     color: var(--accent);
     margin-bottom: 10px;
     text-align: center;
@@ -27,7 +27,7 @@ font-size: 2.8rem;
 }
 
 .last-update {
-text-align: center;
+    text-align: center;
     color: rgba(254, 246, 231, 0.6);
     font-style: italic;
     margin-bottom: 40px;
@@ -36,17 +36,17 @@ text-align: center;
 }
 
 .privacy-section {
-margin-bottom: 35px;
+    margin-bottom: 35px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 179, 71, 0.15);
 }
 
 .privacy-section:last-child {
-border-bottom: none;
+    border-bottom: none;
 }
 
 .privacy-section h2 {
-font-size: 1.8rem;
+    font-size: 1.8rem;
     color: var(--accent);
     margin-bottom: 15px;
     padding-bottom: 10px;
@@ -56,7 +56,7 @@ font-size: 1.8rem;
 }
 
 .privacy-section h3 {
-font-size: 1.3rem;
+    font-size: 1.3rem;
     color: rgba(255, 179, 71, 0.9);
     margin-top: 20px;
     margin-bottom: 12px;
@@ -64,7 +64,7 @@ font-size: 1.3rem;
 }
 
 .privacy-section p {
-line-height: 1.8;
+    line-height: 1.8;
     color: var(--text);
     margin-bottom: 15px;
     text-align: justify;
@@ -72,13 +72,13 @@ line-height: 1.8;
 }
 
 .privacy-section ul {
-margin-left: 25px;
+    margin-left: 25px;
     margin-bottom: 15px;
     list-style: none;
 }
 
 .privacy-section ul li {
-line-height: 1.8;
+    line-height: 1.8;
     color: var(--text);
     margin-bottom: 10px;
     position: relative;
@@ -86,7 +86,7 @@ line-height: 1.8;
 }
 
 .privacy-section ul li::before {
-content: "▸";
+    content: "▸";
     position: absolute;
     left: 0;
     color: var(--accent);
@@ -94,78 +94,26 @@ content: "▸";
 }
 
 .privacy-section a {
-color: var(--accent);
+    color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     border-bottom: 1px solid transparent;
 }
 
 .privacy-section a:hover {
-color: #ffc870;
+    color: #ffc870;
     border-bottom: 1px solid var(--accent);
     text-shadow: 0 0 10px rgba(255, 179, 71, 0.3);
 }
 
 .privacy-section strong {
-color: var(--accent);
+    color: var(--accent);
     font-weight: 700;
-}
-
-/* Animación de entrada suave */
-.privacy-container {
-
-}
-
-
-
-/* Responsive */
-/* Responsive rules */
-@media (max-width: 768px) {
-    .privacy-container {
-margin: 100px 20px 30px;
-        padding: 30px 20px;
-}
-
-    .privacy-container h1 {
-font-size: 2.2rem;
-}
-
-    .privacy-section h2 {
-font-size: 1.5rem;
-}
-
-    .privacy-section h3 {
-font-size: 1.2rem;
-}
-
-    .privacy-section p,
-    .privacy-section ul li {
-font-size: 0.95rem;
-}
-}
-
-@media (max-width: 480px) {
-    .privacy-container {
-margin: 90px 15px 25px;
-        padding: 25px 15px;
-}
-
-    .privacy-container h1 {
-font-size: 1.8rem;
-}
-
-    .privacy-section h2 {
-font-size: 1.3rem;
-}
-
-    .privacy-section h3 {
-font-size: 1.1rem;
-}
 }
 
 /* Estilos adicionales para disclaimer */
 .disclaimer-footer {
-background: rgba(151, 26, 26, 0.2);
+    background: rgba(151, 26, 26, 0.2);
     padding: 20px;
     border-radius: 12px;
     border: 1px solid rgba(255, 179, 71, 0.3);
@@ -173,12 +121,12 @@ background: rgba(151, 26, 26, 0.2);
 }
 
 .disclaimer-footer h2 {
-font-size: 1.4rem;
+    font-size: 1.4rem;
     color: #ff6b6b;
 }
 
 .disclaimer-footer p {
-font-size: 0.9rem;
+    font-size: 0.9rem;
     color: rgba(254, 246, 231, 0.8);
     margin: 0;
 }

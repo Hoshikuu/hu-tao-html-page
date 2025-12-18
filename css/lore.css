@@ -1,5 +1,5 @@
-/* 
-    CSS Especifico para lore.html
+/* lore.css
+    CSS para lore.html
 */
 
 :root {
@@ -64,6 +64,7 @@
     max-height: 800px;
     object-fit: cover;
     display: block;
+    transition: ease 0.3s;
 }
 
 .gallery-item:hover > img, 

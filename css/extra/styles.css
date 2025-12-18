@@ -1,3 +1,7 @@
+/* styles.css
+    CSS con estilos generales para la página web
+*/
+
 :root {
     --bg: #1a0f0f; /* fondo general */
     --nav-li-bg: #3b1f1f; /* fondo de nav */
