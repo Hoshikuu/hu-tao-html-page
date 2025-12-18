@@ -1,0 +1,123 @@
+<!--
+    Pagina de contacto contact.html
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Meta datos para el buscador de google-->
+    <meta name="description" content="Fanpage dedicada a Hu Tao, la 77ª Directora de la Funeraria Wangsheng en Genshin Impact. Encuentra lore, builds, equipos y estadísticas.">
+    <meta name="keywords" content="Hu Tao, Genshin Impact, Funeraria Wangsheng, Pyro, fanpage, builds, lore, estadísticas">
+    <meta name="author" content="Hoshiku">
+
+    <!--Icono-->
+    <link rel="icon" href="/assets/media/icon.ico">
+
+    <!--Importar todos los CSS usados-->
+    <link rel="stylesheet" href="/assets/css/pages/contact.css">
+    <link rel="stylesheet" href="/assets/css/general/styles.css">
+    <link rel="stylesheet" href="/assets/css/general/responsive.css">
+    <link rel="stylesheet" href="/assets/css/general/cover.css">
+
+    <!--Importar la fuente de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Story+Script&display=swap" rel="stylesheet">
+
+    <!--Titulo-->
+    <title>Contacto</title>
+</head>
+<body>
+    <!--La barra de navegacion-->
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li class="logo"><a href="/home/index.html"><img src="/assets/media/nav/img.jpg" alt=""></a></li>
+                <span></span> <!--Separador-->
+                <li><a href="/home/index.html">Home</a></li>
+                <li><a href="/lore/index.html">Lore</a></li>
+                <li><a href="/build/index.html">Build</a></li>
+                <li><a href="/team/index.html">Team</a></li>
+                <li><a href="/stats/index.html">Stats</a></li>
+                <li><a href="/contact/index.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>Contacto</h1>
+            
+            <!--Formulario-->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre *</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Tu nombre" 
+                        required
+                        minlength="2"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="correo@ejemplo.com" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Selecciona un tema...</option>
+                        <option value="build">Consulta sobre Builds</option>
+                        <option value="team">Sugerencia de Team Comp</option>
+                        <option value="error">Reportar error</option>
+                        <option value="lore">Pregunta sobre Lore</option>
+                        <option value="stats">Corrección de stats</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje *</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        placeholder="Escribe tu mensaje..."
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <span>Acepto la <a href="privacy.html">Política de Privacidad</a> *</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Hoshiku | <a href="/cookies/index.html">Cookies</a> | <a href="/privacy/index.html">Política de privacidad</a></p>
+    </footer>
+
+    <!--Importa el javascript para fijar la barra de navegacion arriba-->
+    <script src="/assets/javascript/nav-fix.js" defer></script>
+</body>
+</html>
