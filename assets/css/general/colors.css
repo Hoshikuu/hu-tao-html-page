@@ -1,0 +1,29 @@
+:root {
+    /*General*/
+    --bg: #1a0f0f;
+    --bg2: #3b1f1f99;
+    --accent: #ffb347;
+    --text: #fef6e7;
+
+    /*Nav*/
+    --nav-li-bg: #3b1f1f99;
+    --nav-ul-bg: black;
+    --nav-ul-border: #ffb34733;
+    --nav-li-bg-hover: #5a2626;
+    --nav-li-border: #ffb3474d;
+    --nav-li-active-bg: #971a1a;
+
+    --box-shadow: #ff8b3366;
+    --box-shadow2: #ffb34733;
+
+    /*Footer*/
+    --footer-bg1: #2a1515;
+    --footer-bg2: #1a0808;
+    --footer-top: #ffb3474d;
+    
+
+    --title-text: #fef6e7;
+    --title-shadow: #971a1ae6;
+    --subtitle-text: #ffe1a3;
+    --subtitle-shadow: #ff8c0066;
+}

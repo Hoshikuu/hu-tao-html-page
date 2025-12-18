@@ -2,14 +2,6 @@
     CSS para el cover de la pagina tipo hero
 */
 
-/* Theme variables */
-:root {
-    --title-text: #fef6e7;
-    --subtitle-text: #ffe1a3;
-    --title-shadow: #971a1ae6;
-    --subtitle-shadow: ff8c0066;
-}
-
 .main-section {
     position: relative;
     width: 100%;
@@ -42,7 +34,6 @@
     color: var(--title-text);
     text-shadow:
         0 0 10px black,
-        0 0 25px var(--title-shadow),
         0 0 40px var(--title-shadow);
 }
 
