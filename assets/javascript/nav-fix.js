@@ -1,6 +1,5 @@
-/* header-scroll.js
-   Adds the 'scrolled' class to the fixed header after a small scroll threshold.
-   This keeps behavior consistent across pages without duplicating inline scripts.
+/* 
+  nav-fix.js
 */
 
 (function () {
