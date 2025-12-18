@@ -37,7 +37,7 @@
         <nav>
             <ul>
                 <li class="logo"><a href="/home/"><img src="/assets/media/nav/img.jpg" alt=""></a></li>
-                <span></span> <!--Separador-->
+                <li class="separador"></li>
                 <li><a href="/home/">Home</a></li>
                 <li><a href="/lore/">Lore</a></li>
                 <li><a href="/build/">Build</a></li>
@@ -56,131 +56,136 @@
         </section>
 
         <section class="stats-section">
-            <div class="min-stats">
-                <img src="/assets/media/stats/banner/banner1.png" alt="">
-                <table class="min-table">
-                    <thead class="min-head">
-                        <tr>
-                            <th>Estadísticas</th>
-                            <th>Base</th>
-                        </tr>
-                    </thead>
+            <h1>Estadísticas</h1>
 
-                    <tbody class="min-body">
-                        <tr>
-                            <td>Vida</td>
-                            <td>15080</td>
-                        </tr>
+            <div class="stats-grid">
+                <div class="min-stats">
+                    <img src="/assets/media/stats/banner/banner1.png" alt="">
+                    <table class="min-table">
+                        <thead class="min-head">
+                            <tr>
+                                <th>Estadísticas</th>
+                                <th>Base</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>Ataque</td>
-                            <td>103</td>
-                        </tr>
+                        <tbody class="min-body">
+                            <tr>
+                                <td>Vida</td>
+                                <td>15080</td>
+                            </tr>
 
-                        <tr>
-                            <td>Defensa</td>
-                            <td>849</td>
-                        </tr>
+                            <tr>
+                                <td>Ataque</td>
+                                <td>103</td>
+                            </tr>
 
-                        <tr>
-                            <td>Prob. Crit.</td>
-                            <td>5%</td>
-                        </tr>
+                            <tr>
+                                <td>Defensa</td>
+                                <td>849</td>
+                            </tr>
 
-                        <tr>
-                            <td>Daño Crit.</td>
-                            <td>38%</td>
-                        </tr>
+                            <tr>
+                                <td>Prob. Crit.</td>
+                                <td>5%</td>
+                            </tr>
 
-                        <tr>
-                            <td>Rec. Energía</td>
-                            <td>100%</td>
-                        </tr>
+                            <tr>
+                                <td>Daño Crit.</td>
+                                <td>38%</td>
+                            </tr>
 
-                        <tr>
-                            <td>Bono Pyro</td>
-                            <td>0%</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>Rec. Energía</td>
+                                <td>100%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Bono Pyro</td>
+                                <td>0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="opt-stats">
+                    <img src="/assets/media/stats/banner/banner2.png" alt="">
+                    <table class="opt-table">
+                        <thead class="opt-head">
+                            <tr>
+                                <th>Estadísticas</th>
+                                <th>Recomendado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="opt-body">
+                            <tr>
+                                <td>Vida</td>
+                                <td>>30000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Ataque</td>
+                                <td>~1350</td>
+                            </tr>
+
+                            <tr>
+                                <td>Defensa</td>
+                                <td>&lt;1000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Prob. Crit.</td>
+                                <td>>60%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Daño Crit.</td>
+                                <td>~260%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rec. Energía</td>
+                                <td>~110%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Bono Pyro</td>
+                                <td>~46.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="art-stats">
+                    <table class="art-table">
+                        <thead class="art-head">
+                            <tr>
+                                <th><img src="/assets/media/stats/icon/flower.webp" alt=""></th>
+                                <th><img src="/assets/media/stats/icon/feather.webp" alt=""></th>
+                                <th><img src="/assets/media/stats/icon/goblet.webp" alt=""></th>
+                                <th><img src="/assets/media/stats/icon/sands.webp" alt=""></th>
+                                <th><img src="/assets/media/stats/icon/circlet.webp" alt=""></th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="art-body">
+                            <tr class="main-stats">
+                                <td>Vida</td>
+                                <td>Ataque</td>
+                                <td>Vida%/Maestria Elemental</td>
+                                <td>Bono Pyro</td>
+                                <td>Prob. Crit./Daño Crit.</td>
+                            </tr>
+
+                            <tr class="sub-stats">
+                                <td colspan="5">Prob. Crit. > Daño Crit. >> Vida% > Maestria Elemental</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <div class="opt-stats">
-                <img src="/assets/media/stats/banner/banner2.png" alt="">
-                <table class="opt-table">
-                    <thead class="opt-head">
-                        <tr>
-                            <th>Estadísticas</th>
-                            <th>Recomendado</th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="opt-body">
-                        <tr>
-                            <td>Vida</td>
-                            <td>>30000</td>
-                        </tr>
-
-                        <tr>
-                            <td>Ataque</td>
-                            <td>~1350</td>
-                        </tr>
-
-                        <tr>
-                            <td>Defensa</td>
-                            <td><1000</td>
-                        </tr>
-
-                        <tr>
-                            <td>Prob. Crit.</td>
-                            <td>>60%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Daño Crit.</td>
-                            <td>~260%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Rec. Energía</td>
-                            <td>~110%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Bono Pyro</td>
-                            <td>~46.6%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="art-stats">
-                <table class="art-table">
-                    <thead class="art-head">
-                        <tr>
-                            <th><img src="/assets/media/stats/icon/flower.webp" alt=""></th>
-                            <th><img src="/assets/media/stats/icon/feather.webp" alt=""></th>
-                            <th><img src="/assets/media/stats/icon/goblet.webp" alt=""></th>
-                            <th><img src="/assets/media/stats/icon/sands.webp" alt=""></th>
-                            <th><img src="/assets/media/stats/icon/circlet.webp" alt=""></th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="art-body">
-                        <tr class="main-stats">
-                            <td>Vida</td>
-                            <td>Ataque</td>
-                            <td>Vida%/Maestria Elemental</td>
-                            <td>Bono Pyro</td>
-                            <td>Prob. Crit./Daño Crit.</td>
-                        </tr>
-
-                        <tr class="sub-stats">
-                            <td colspan="5">Prob. Crit. > Daño Crit. >> Vida% > Maestria Elemental</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            
         </section>
     </main>
 

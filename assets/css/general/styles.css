@@ -64,7 +64,7 @@ nav > ul > li.logo > a > img:hover {
     transform: rotate(360deg) scale(1.1);
 }
 
-nav > ul > span {
+.separador {
     flex-grow: 1;
 }
 

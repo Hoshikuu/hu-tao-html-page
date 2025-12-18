@@ -3,11 +3,30 @@
 */
 
 /* Sección de estadísticas */
+
 .stats-section {
     max-width: 1200px;
-    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.stats-section > h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--title-text);
+    text-shadow:
+        0 0 10px black,
+        0 0 40px var(--title-shadow);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
