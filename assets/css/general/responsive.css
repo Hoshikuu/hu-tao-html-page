@@ -1,0 +1,673 @@
+/* responsive.css
+    CSS para hacer la pagina responsiva a 400px, 600px y 900px
+    Generado con IA
+*/
+
+@media (max-width: 900px) {
+
+    /* === HEADER & NAVIGATION === */
+    header {
+        width: 98%;
+    }
+
+    nav>ul {
+        gap: 10px;
+        padding: 6px 10px;
+    }
+
+    nav>ul>li.logo>a>img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    nav>ul>li>a {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+    }
+
+    /* === COVER SECTION === */
+    .main-section {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .main-section>h1 {
+        top: 38%;
+        letter-spacing: 0.1em;
+    }
+
+    .main-section>h2 {
+        top: 58%;
+    }
+
+    /* === HOME SECTION === */
+    .quote-section {
+        margin: 40px 20px;
+        padding: 25px 20px;
+    }
+
+    .quote-section>h1::before,
+    .quote-section>h1::after {
+        font-size: 2rem;
+        margin: 0 4px;
+    }
+
+    /* === LORE/GALLERY SECTION === */
+    .gallery-row {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .gallery-item>img {
+        max-height: 350px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .gallery-item-2 {
+        flex: 1 1 100%;
+        padding: 20px 18px;
+    }
+
+    .gallery-item-2>h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .gallery-item-2>h1::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery-item-2>p {
+        font-size: 0.95rem;
+    }
+
+    /* === BUILD SECTION === */
+    .talent-section,
+    .constellation-section,
+    .weapon-section,
+    .artifact-section {
+        margin: 50px auto 40px;
+        padding: 0 15px;
+    }
+
+    .talent-item,
+    .constellation-item {
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .talent-item>img,
+    .constellation-item>img {
+        width: 100px;
+        height: 100px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .constellation-item:nth-child(even) {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .constellation-item:nth-child(even)>img {
+        order: 0;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .weapon-grid,
+    .artifact-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 18px;
+    }
+
+    /* === TEAM/SYNERGIES SECTION === */
+    .synergies-section {
+        margin: 50px auto 40px;
+        padding: 0 15px;
+    }
+
+    .synergies-section>h1 {
+        margin-bottom: 50px;
+    }
+
+    .synergies-grid {
+        gap: 40px;
+    }
+
+    .synergies-grid>h1 {
+        font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+        padding: 12px 25px;
+        margin: 25px 0 15px;
+    }
+
+    .synergies-item {
+        gap: 0 18px;
+        padding: 18px;
+    }
+
+    .synergies-item>img {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>h2 {
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
+    }
+
+    .synergies-item>p {
+        font-size: 0.93rem;
+        line-height: 1.7;
+    }
+
+    /* === STATS SECTION === */
+    .stats-section {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+/* ============================================
+   BREAKPOINT: 600px (Móviles grandes)
+   ============================================ */
+
+@media (max-width: 600px) {
+
+    /* === HEADER & NAVIGATION === */
+    header {
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    nav>ul {
+        gap: 6px;
+        padding: 5px 8px;
+        border-radius: 30px;
+    }
+
+    nav>ul>li.logo {
+        display: none;
+    }
+
+    nav>ul>li>a {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        letter-spacing: 0.05em;
+    }
+
+    /* === HOME SECTION === */
+    .quote-section {
+        margin: 25px 15px;
+        padding: 20px 15px;
+    }
+
+    .quote-section>h1 {
+        font-size: 1.3rem;
+    }
+
+    /* === LORE/GALLERY SECTION === */
+    .img-section {
+        margin: 40px auto;
+        padding: 0 10px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .gallery-row {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .gallery-item {
+        min-width: 100%;
+        border-radius: 12px;
+    }
+
+    .gallery-item>img {
+        max-height: 280px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .gallery-item-2 {
+        padding: 18px 14px;
+        border-radius: 12px;
+    }
+
+    .gallery-item-2>h1 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-item-2>p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* === BUILD SECTION === */
+    .talent-section,
+    .constellation-section,
+    .weapon-section,
+    .artifact-section {
+        margin: 40px auto 30px;
+        padding: 0 12px;
+    }
+
+    .talent-section>h1::after,
+    .constellation-section>h1::after,
+    .weapon-section>h1::after,
+    .artifact-section>h1::after {
+        width: 150px;
+    }
+
+    .talent-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .talent-item>img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .talent-item>h2 {
+        text-align: center;
+    }
+
+    .talent-item>ul>li {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .talent-item>ul>li::before {
+        display: none;
+    }
+
+    .constellation-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 18px;
+    }
+
+    .constellation-item>img {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .constellation-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .constellation-item>h2 {
+        text-align: center;
+    }
+
+    .constellation-item>ul>li {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .constellation-item>ul>li::before {
+        display: none;
+    }
+
+    .weapon-grid,
+    .artifact-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .weapon-item>img {
+        width: 60px;
+        height: 60px;
+        top: 12px;
+        right: 12px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .weapon-item>h2 {
+        padding-right: 75px;
+        font-size: 1.1rem;
+    }
+
+    .artifact-item>img {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    /* === TEAM/SYNERGIES SECTION === */
+    .synergies-section {
+        margin: 40px auto 30px;
+        padding: 0 12px;
+    }
+
+    .synergies-section>h1 {
+        margin-bottom: 40px;
+    }
+
+    .synergies-section>h1::after {
+        width: 150px;
+    }
+
+    .synergies-grid {
+        gap: 35px;
+    }
+
+    .synergies-grid>h1 {
+        padding: 10px 20px;
+        margin: 20px 0 12px;
+        border-radius: 40px;
+    }
+
+    .synergies-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 15px;
+        padding: 20px 16px;
+        text-align: center;
+    }
+
+    .synergies-item>img {
+        grid-row: 1;
+        grid-column: 1;
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+        justify-self: center;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    /* Para items con 2 imágenes */
+    .synergies-item>img:nth-of-type(1) {
+        grid-row: 1;
+        grid-column: 1;
+        margin-right: 8px;
+        margin-bottom: 0;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>img:nth-of-type(2) {
+        grid-row: 1;
+        grid-column: 1;
+        margin-left: 8px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item:has(img:nth-of-type(2)) {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item:has(img:nth-of-type(2))>h2 {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item:has(img:nth-of-type(2))>p {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>h2 {
+        grid-row: 2;
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .synergies-item>h2::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .synergies-item>p {
+        grid-row: 3;
+        grid-column: 1;
+        padding-top: 0;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    /* === STATS SECTION === */
+    .art-stats {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .art-stats table {
+        min-width: 600px;
+    }
+
+    /* === CONTACT SECTION === */
+    .contact-container {
+        margin: 100px 20px 30px;
+        padding: 30px 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    /* === COOKIES SECTION === */
+    .cookies-container {
+        margin: 100px 20px 30px;
+        padding: 30px 20px;
+    }
+
+    .cookies-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .cookies-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cookies-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .browser-instructions {
+        grid-template-columns: 1fr;
+    }
+
+    /* === PRIVACY SECTION === */
+    .privacy-container {
+        margin: 100px 20px 30px;
+        padding: 30px 20px;
+    }
+
+    .privacy-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .privacy-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .privacy-section p,
+    .privacy-section ul li {
+        font-size: 0.95rem;
+    }
+}
+
+/* ============================================
+   BREAKPOINT: 400px (Móviles pequeños)
+   ============================================ */
+
+@media (max-width: 400px) {
+
+    /* === HOME SECTION === */
+    .quote-section {
+        margin: 30px 15px;
+        padding: 20px 15px;
+    }
+
+    /* === BUILD SECTION === */
+    .talent-item,
+    .constellation-item,
+    .weapon-item,
+    .artifact-item {
+        padding: 16px;
+    }
+
+    .weapon-item>img {
+        width: 55px;
+        height: 55px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .artifact-item>img {
+        width: 70px;
+        height: 70px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .talent-item>ul>li>p,
+    .constellation-item>ul>li>p,
+    .weapon-item>ul>li>p,
+    .artifact-item>ul>li>p {
+        font-size: 0.88rem;
+    }
+
+    /* === TEAM/SYNERGIES SECTION === */
+    .synergies-section {
+        margin: 35px auto 25px;
+    }
+
+    .synergies-grid {
+        gap: 30px;
+    }
+
+    .synergies-grid>h1 {
+        padding: 8px 15px;
+        font-size: 1.3rem;
+    }
+
+    .synergies-item {
+        padding: 18px 14px;
+    }
+
+    .synergies-item>img {
+        width: 75px;
+        height: 75px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>img:nth-of-type(1),
+    .synergies-item>img:nth-of-type(2) {
+        width: 70px;
+        height: 70px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>h2 {
+        font-size: 1.15rem;
+    }
+
+    .synergies-item>p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+
+    /* === STATS SECTION === */
+    .stats-section {
+        padding: 0 10px;
+    }
+
+    .min-stats,
+    .opt-stats {
+        padding: 15px;
+    }
+
+    tbody td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    /* === CONTACT SECTION === */
+    .contact-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    /* === COOKIES SECTION === */
+    .cookies-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .cookies-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .cookies-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .cookies-section h3 {
+        font-size: 1.1rem;
+    }
+
+    /* === PRIVACY SECTION === */
+    .privacy-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .privacy-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .privacy-section h3 {
+        font-size: 1.1rem;
+    }
+}
