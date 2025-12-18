@@ -1,148 +1,190 @@
 /* responsive.css
-    CSS que trata la responsibilidad en 400px, 600px, 900px
+    CSS para hacer la pagina responsiva a 400px, 600px y 900px
+    Generado con IA
 */
 
-/* Responsive rules */
-@media (max-width: 400px) {
+@media (max-width: 900px) {
+
+    /* === HEADER & NAVIGATION === */
+    header {
+        width: 98%;
+    }
+
+    nav>ul {
+        gap: 10px;
+        padding: 6px 10px;
+    }
+
+    nav>ul>li.logo>a>img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    nav>ul>li>a {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+    }
+
+    /* === COVER SECTION === */
+    .main-section {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .main-section>h1 {
+        top: 38%;
+        letter-spacing: 0.1em;
+    }
+
+    .main-section>h2 {
+        top: 58%;
+    }
+
+    /* === HOME SECTION === */
     .quote-section {
-        margin: 30px 15px;
-        padding: 20px 15px;
+        margin: 40px 20px;
+        padding: 25px 20px;
+    }
+
+    .quote-section>h1::before,
+    .quote-section>h1::after {
+        font-size: 2rem;
+        margin: 0 4px;
+    }
+
+    /* === LORE/GALLERY SECTION === */
+    .gallery-row {
+        gap: 15px;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .gallery-item>img {
+        max-height: 350px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .gallery-item-2 {
+        flex: 1 1 100%;
+        padding: 20px 18px;
+    }
+
+    .gallery-item-2>h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .gallery-item-2>h1::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery-item-2>p {
+        font-size: 0.95rem;
+    }
+
+    /* === BUILD SECTION === */
+    .talent-section,
+    .constellation-section,
+    .weapon-section,
+    .artifact-section {
+        margin: 50px auto 40px;
+        padding: 0 15px;
     }
 
     .talent-item,
-    .constellation-item,
-    .weapon-item,
-    .artifact-item {
-        padding: 16px;
+    .constellation-item {
+        grid-template-columns: 100px 1fr;
+        gap: 20px;
+        padding: 18px;
     }
 
-    .weapon-item>img {
-        width: 55px;
-        height: 55px;
+    .talent-item>img,
+    .constellation-item>img {
+        width: 100px;
+        height: 100px;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
-    .artifact-item>img {
-        width: 70px;
-        height: 70px;
+    .constellation-item:nth-child(even) {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .constellation-item:nth-child(even)>img {
+        order: 0;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
-    .talent-item>ul>li>p,
-    .constellation-item>ul>li>p,
-    .weapon-item>ul>li>p,
-    .artifact-item>ul>li>p {
-        font-size: 0.88rem;
+    .weapon-grid,
+    .artifact-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 18px;
     }
 
+    /* === TEAM/SYNERGIES SECTION === */
     .synergies-section {
-        margin: 35px auto 25px;
+        margin: 50px auto 40px;
+        padding: 0 15px;
+    }
+
+    .synergies-section>h1 {
+        margin-bottom: 50px;
     }
 
     .synergies-grid {
-        gap: 30px;
+        gap: 40px;
     }
 
     .synergies-grid>h1 {
-        padding: 8px 15px;
-        font-size: 1.3rem;
+        font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+        padding: 12px 25px;
+        margin: 25px 0 15px;
     }
 
     .synergies-item {
-        padding: 18px 14px;
+        gap: 0 18px;
+        padding: 18px;
     }
 
     .synergies-item>img {
-        width: 75px;
-        height: 75px;
-        transition: transform 0.25s ease;
-        will-change: transform;
-    }
-
-    .synergies-item>img:nth-of-type(1),
-    .synergies-item>img:nth-of-type(2) {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
     .synergies-item>h2 {
-        font-size: 1.15rem;
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
     }
 
     .synergies-item>p {
-        font-size: 0.88rem;
-        line-height: 1.65;
+        font-size: 0.93rem;
+        line-height: 1.7;
     }
 
+    /* === STATS SECTION === */
     .stats-section {
-        padding: 0 10px;
-    }
-
-    .min-stats,
-    .opt-stats {
-        padding: 15px;
-    }
-
-    tbody td {
-        padding: 8px;
-        font-size: 0.9rem;
-    }
-
-    .contact-container {
-        margin: 90px 15px 25px;
-        padding: 25px 15px;
-    }
-
-    .contact-container h1 {
-        font-size: 1.8rem;
-    }
-
-    .submit-btn {
-        width: 100%;
-    }
-
-    .cookies-container {
-        margin: 90px 15px 25px;
-        padding: 25px 15px;
-    }
-
-    .cookies-container h1 {
-        font-size: 1.8rem;
-    }
-
-    .cookies-section h2 {
-        font-size: 1.3rem;
-    }
-
-    .cookies-section h3 {
-        font-size: 1.1rem;
-    }
-
-    .privacy-container {
-        margin: 90px 15px 25px;
-        padding: 25px 15px;
-    }
-
-    .privacy-container h1 {
-        font-size: 1.8rem;
-    }
-
-    .privacy-section h2 {
-        font-size: 1.3rem;
-    }
-
-    .privacy-section h3 {
-        font-size: 1.1rem;
+        grid-template-columns: 1fr;
+        max-width: 600px;
     }
 }
 
+/* ============================================
+   BREAKPOINT: 600px (Móviles grandes)
+   ============================================ */
+
 @media (max-width: 600px) {
 
-    /* Fixed header and navigation */
+    /* === HEADER & NAVIGATION === */
     header {
         width: 100%;
         padding-top: 8px;
@@ -164,6 +206,7 @@
         letter-spacing: 0.05em;
     }
 
+    /* === HOME SECTION === */
     .quote-section {
         margin: 25px 15px;
         padding: 20px 15px;
@@ -173,6 +216,7 @@
         font-size: 1.3rem;
     }
 
+    /* === LORE/GALLERY SECTION === */
     .img-section {
         margin: 40px auto;
         padding: 0 10px;
@@ -210,6 +254,7 @@
         line-height: 1.6;
     }
 
+    /* === BUILD SECTION === */
     .talent-section,
     .constellation-section,
     .weapon-section,
@@ -311,6 +356,7 @@
         will-change: transform;
     }
 
+    /* === TEAM/SYNERGIES SECTION === */
     .synergies-section {
         margin: 40px auto 30px;
         padding: 0 12px;
@@ -353,7 +399,7 @@
         will-change: transform;
     }
 
-    /* Para items con 2 imágenes - las ponemos en horizontal */
+    /* Para items con 2 imágenes */
     .synergies-item>img:nth-of-type(1) {
         grid-row: 1;
         grid-column: 1;
@@ -411,6 +457,7 @@
         text-align: left;
     }
 
+    /* === STATS SECTION === */
     .art-stats {
         padding: 15px;
         overflow-x: auto;
@@ -420,6 +467,7 @@
         min-width: 600px;
     }
 
+    /* === CONTACT SECTION === */
     .contact-container {
         margin: 100px 20px 30px;
         padding: 30px 20px;
@@ -429,6 +477,7 @@
         font-size: 2rem;
     }
 
+    /* === COOKIES SECTION === */
     .cookies-container {
         margin: 100px 20px 30px;
         padding: 30px 20px;
@@ -450,6 +499,7 @@
         grid-template-columns: 1fr;
     }
 
+    /* === PRIVACY SECTION === */
     .privacy-container {
         margin: 100px 20px 30px;
         padding: 30px 20px;
@@ -473,169 +523,151 @@
     }
 }
 
-@media (max-width: 900px) {
-    header {
-        width: 98%;
-    }
+/* ============================================
+   BREAKPOINT: 400px (Móviles pequeños)
+   ============================================ */
 
-    nav>ul {
-        gap: 10px;
-        padding: 6px 10px;
-    }
+@media (max-width: 400px) {
 
-    nav>ul>li.logo>img {
-        width: 40px;
-        height: 40px;
-        transition: transform 0.25s ease;
-        will-change: transform;
-    }
-
-    nav>ul>li>a {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-    }
-
-    .main-section {
-        height: 80vh;
-        min-height: 500px;
-    }
-
-    .main-section>h1 {
-        top: 38%;
-        letter-spacing: 0.1em;
-    }
-
-    .main-section>h2 {
-        top: 58%;
-    }
-
+    /* === HOME SECTION === */
     .quote-section {
-        margin: 40px 20px;
-        padding: 25px 20px;
+        margin: 30px 15px;
+        padding: 20px 15px;
     }
 
-    .quote-section>h1::before,
-    .quote-section>h1::after {
-        font-size: 2rem;
-        margin: 0 4px;
-    }
-
-    .gallery-row {
-        gap: 15px;
-    }
-
-    .gallery-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .gallery-item>img {
-        max-height: 350px;
-        transition: transform 0.25s ease;
-        will-change: transform;
-    }
-
-    .gallery-item-2 {
-        flex: 1 1 100%;
-        padding: 20px 18px;
-    }
-
-    .gallery-item-2>h1 {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-
-    .gallery-item-2>h1::after {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gallery-item-2>p {
-        font-size: 0.95rem;
-    }
-
-    .talent-section,
-    .constellation-section,
-    .weapon-section,
-    .artifact-section {
-        margin: 50px auto 40px;
-        padding: 0 15px;
-    }
-
+    /* === BUILD SECTION === */
     .talent-item,
-    .constellation-item {
-        grid-template-columns: 100px 1fr;
-        gap: 20px;
-        padding: 18px;
+    .constellation-item,
+    .weapon-item,
+    .artifact-item {
+        padding: 16px;
     }
 
-    .talent-item>img,
-    .constellation-item>img {
-        width: 100px;
-        height: 100px;
+    .weapon-item>img {
+        width: 55px;
+        height: 55px;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
-    .constellation-item:nth-child(even) {
-        grid-template-columns: 100px 1fr;
-    }
-
-    .constellation-item:nth-child(even)>img {
-        order: 0;
+    .artifact-item>img {
+        width: 70px;
+        height: 70px;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
-    .weapon-grid,
-    .artifact-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 18px;
+    .talent-item>ul>li>p,
+    .constellation-item>ul>li>p,
+    .weapon-item>ul>li>p,
+    .artifact-item>ul>li>p {
+        font-size: 0.88rem;
     }
 
+    /* === TEAM/SYNERGIES SECTION === */
     .synergies-section {
-        margin: 50px auto 40px;
-        padding: 0 15px;
-    }
-
-    .synergies-section>h1 {
-        margin-bottom: 50px;
+        margin: 35px auto 25px;
     }
 
     .synergies-grid {
-        gap: 40px;
+        gap: 30px;
     }
 
     .synergies-grid>h1 {
-        font-size: clamp(1.5rem, 3.5vw, 2.2rem);
-        padding: 12px 25px;
-        margin: 25px 0 15px;
+        padding: 8px 15px;
+        font-size: 1.3rem;
     }
 
     .synergies-item {
-        gap: 0 18px;
-        padding: 18px;
+        padding: 18px 14px;
     }
 
     .synergies-item>img {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
+        transition: transform 0.25s ease;
+        will-change: transform;
+    }
+
+    .synergies-item>img:nth-of-type(1),
+    .synergies-item>img:nth-of-type(2) {
+        width: 70px;
+        height: 70px;
         transition: transform 0.25s ease;
         will-change: transform;
     }
 
     .synergies-item>h2 {
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
+        font-size: 1.15rem;
     }
 
     .synergies-item>p {
-        font-size: 0.93rem;
-        line-height: 1.7;
+        font-size: 0.88rem;
+        line-height: 1.65;
     }
 
+    /* === STATS SECTION === */
     .stats-section {
-        grid-template-columns: 1fr;
-        max-width: 600px;
+        padding: 0 10px;
+    }
+
+    .min-stats,
+    .opt-stats {
+        padding: 15px;
+    }
+
+    tbody td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    /* === CONTACT SECTION === */
+    .contact-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    /* === COOKIES SECTION === */
+    .cookies-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .cookies-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .cookies-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .cookies-section h3 {
+        font-size: 1.1rem;
+    }
+
+    /* === PRIVACY SECTION === */
+    .privacy-container {
+        margin: 90px 15px 25px;
+        padding: 25px 15px;
+    }
+
+    .privacy-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .privacy-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .privacy-section h3 {
+        font-size: 1.1rem;
     }
 }
